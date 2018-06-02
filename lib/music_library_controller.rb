@@ -10,6 +10,7 @@ class MusicLibraryController
   def call
     puts "Welcome to your music library!"
     puts "To list all of your songs, enter 'list songs'."
-    resp = gets.strip 
+    resp = gets.strip
+    if resp.downcase=="list songs"
   end
 end
