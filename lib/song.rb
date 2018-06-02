@@ -1,6 +1,6 @@
 
 class Song
-  attr_accessor :name 
+  attr_accessor :name
   attr_reader :artist, :genre
 
   @@all=[]
@@ -8,7 +8,7 @@ class Song
   def initialize(name,artist=nil,genre=nil)
     @name=name    #initializes with a name
     self.artist=(artist)
-    
+
   end
 
   ##! How is this going to be generalizable?
@@ -44,7 +44,7 @@ class Song
       genre.add_song(self)
     end
   end
-  
+
 
 
 
