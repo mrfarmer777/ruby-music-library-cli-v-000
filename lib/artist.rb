@@ -6,6 +6,7 @@ class Artist
 
   def initialize(name)
     @name=name    #initializes with a name
+    @songs=[]
   end
 
   ##! How is this going to be generalizable?
