@@ -21,7 +21,7 @@ class Song
     self.class.all<<self  #generalizable save method that requires the all method
   end
 
-  def create(name) #just like initialize, but with save!
+  def self.create(name) #just like initialize, but with save!
     song = Song.new(name)
     song.save
   end
