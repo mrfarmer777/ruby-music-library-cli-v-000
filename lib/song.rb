@@ -29,7 +29,10 @@ class Song
   end
 
   #relational methods
-
+  def artist=(artist)
+    @artist=artist
+    artist.songs<<self
+  end
 
 
 
