@@ -14,7 +14,9 @@ class Artist
   end
 
   def add_song(song)
-    song.artist=self
+    if song.artist==nil
+      song.artist=self
+    end
   end
 
   ##! How is this going to be generalizable?
