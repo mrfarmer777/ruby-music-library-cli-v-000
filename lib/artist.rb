@@ -45,11 +45,13 @@ class Artist
   end
 
   def genres
-    Song.all.each {|song|
-      if song.artist==self
-        song.genre
+    res=[]
+    Song.all.each {|song| 
+      if song.artist==self 
+        res<<song.genre
       end
     }
+    res
   end
 
 
