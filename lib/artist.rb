@@ -46,12 +46,11 @@ class Artist
 
   def genres
     res=[]
-    Song.all.each {|song| 
-      if song.artist==self 
+    @songs.each do |song|
+      if !res.include?(song.genre)
         res<<song.genre
       end
-    }
-    res
+    end
   end
 
 
