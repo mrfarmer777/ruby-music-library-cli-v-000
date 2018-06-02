@@ -4,7 +4,7 @@ class MusicImporter
 
   def initialize(path)
     @path=path
-    @files=Dir.entries(path)
+    @files=Dir.chdir(path).glob("*")
   end
 
 end
