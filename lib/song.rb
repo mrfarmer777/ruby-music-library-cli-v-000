@@ -6,6 +6,7 @@ class Song
 
   def initialize(name)
     @name=name    #initializes with a name
+    self
   end
 
   ##! How is this going to be generalizable?
