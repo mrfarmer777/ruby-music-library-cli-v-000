@@ -29,9 +29,9 @@ class Song
   end
 
   #relational methods
-  def @artist=(artist)
+  def @artist=
     artist.add_song(self)
-    self.artist=artist
+    @artist=artist
   end
 
 
