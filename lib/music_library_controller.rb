@@ -15,7 +15,7 @@ class MusicLibraryController
       resp = gets.strip
       if resp.downcase=="list songs"
         Song.all
-      else 
+      else
         active=false
       end
     end
