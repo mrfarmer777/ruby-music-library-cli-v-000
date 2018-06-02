@@ -18,7 +18,7 @@ class Song
   end
 
   def save
-    Song.all<<self  #generalizable save method that requires the all method
+    @@all<<self  #generalizable save method that requires the all method
   end
 
   def self.create(name) #just like initialize, but with save!
