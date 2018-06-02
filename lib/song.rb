@@ -55,7 +55,7 @@ class Song
     if res==nil
       Song.create(name)
     else
-      res      
+      res
     end
   end
 
