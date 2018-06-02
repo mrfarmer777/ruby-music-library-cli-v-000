@@ -48,10 +48,8 @@ class Artist
   end
 
   def genres
-    res=[]
-    binding.pry
+    res=[]    
     self.songs.each do |song|
-
       if !res.include?(song.genre)
         res<<song.genre
       end
