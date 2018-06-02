@@ -9,18 +9,7 @@ class Artist
     @songs=[]
   end
 
-  def songs
-    @songs
-  end
-
-  def add_song(song)
-    if song.artist==nil
-      song.artist=self
-      if !@songs.include?(song)
-        @songs<<song
-      end
-    end
-  end
+  
 
   ##! How is this going to be generalizable?
   def self.all  #expose the class variable @@all
@@ -39,6 +28,20 @@ class Artist
     artist = Artist.new(name)
     artist.save
     artist
+  end
+
+  #relational methods
+  def songs
+    @songs
+  end
+
+  def add_song(song)
+    if song.artist==nil
+      song.artist=self
+      if !@songs.include?(song)
+        @songs<<song
+      end
+    end
   end
 
 
