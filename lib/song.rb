@@ -65,7 +65,7 @@ class Song
     genre=filename.split(" - ")[2].sub(".mp3","")
     song=Song.find_or_create_by_name(title)
     song.artist=Artist.find_or_create_by_name(artist)
-    song.genre=Genre.find_or_create_by_name()
+    song.genre=Genre.find_or_create_by_name(genre)
     song
   end
 
