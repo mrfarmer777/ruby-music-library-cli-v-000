@@ -1,4 +1,4 @@
-
+require 'pry'
 class Artist
   attr_accessor :name, :songs
 
@@ -47,6 +47,7 @@ class Artist
   def genres
     res=[]
     self.songs.each do |song|
+      binding.pry
       if !res.include?(song.genre)
         res<<song.genre
       end
