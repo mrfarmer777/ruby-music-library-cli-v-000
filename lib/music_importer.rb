@@ -7,8 +7,7 @@ class MusicImporter
   end
 
   def files
-    file_list=Dir[path+"/*.mp3"]
-    file_list.collect {|file_name| file_name.split(".")[0]}
+    file_list=Dir[path+"/*.mp3"]    
   end
 
 end
