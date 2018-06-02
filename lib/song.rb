@@ -5,8 +5,7 @@ class Song
   @@all=[]
 
   def initialize(name)
-    @name=name    #initializes with a name
-    self
+    @name=name    #initializes with a name    
   end
 
   ##! How is this going to be generalizable?
@@ -25,6 +24,7 @@ class Song
   def self.create(name) #just like initialize, but with save!
     song = Song.new(name)
     song.save
+    song
   end
 
 
