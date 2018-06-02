@@ -11,4 +11,10 @@ class MusicImporter
     file_list.collect {|file_name| file_name.split("/mp3s/")[1]}
   end
 
+  def self.import
+
+  end
+    
+    
+
 end
