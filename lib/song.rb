@@ -30,8 +30,7 @@ class Song
 
   #relational methods
   def artist=(artist)
-    artist.add_song(self)
-    @artist=artist
+    artist.add_song(self)  
   end
 
 
