@@ -1,14 +1,13 @@
 
 class Song
-  attr_accessor :name, :artist, :genre
+  attr_accessor :name, :genre
+  attr_reader :artist
 
   @@all=[]
 
   def initialize(name,artist=nil)
-    @name=name    #initializes with a name
-    if !artist==nil
-      self.artist=(artist)
-    end
+    @name=name    #initializes with a name    
+    self.artist=(artist)
   end
 
   ##! How is this going to be generalizable?
