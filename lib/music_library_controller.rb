@@ -26,7 +26,7 @@ class MusicLibraryController
         active=false
       else
         'please enter a valid command'
-      end      
+      end
     end
   end
 end
