@@ -6,6 +6,7 @@ class Genre
 
   def initialize(name)
     @name=name    #initializes with a name
+    @songs=[]
   end
 
   ##! How is this going to be generalizable?
@@ -25,6 +26,11 @@ class Genre
     genre = Genre.new(name)
     genre.save
     genre
+  end
+
+  #relational methods
+  def songs
+    @songs
   end
 
 
