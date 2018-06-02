@@ -9,6 +9,6 @@ class MusicLibraryController
 
   def call
     puts "Welcome to your music library!"
-    gets "What would you like to do?"
+    resp = gets "What would you like to do?"
   end
 end
