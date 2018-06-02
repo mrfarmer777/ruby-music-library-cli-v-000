@@ -4,8 +4,9 @@ class Song
 
   @@all=[]
 
-  def initialize(name)
+  def initialize(name,artist=nil)
     @name=name    #initializes with a name
+    self.artist=artist
   end
 
   ##! How is this going to be generalizable?
@@ -25,6 +26,12 @@ class Song
     song = Song.new(name)
     song.save
     song
+  end
+
+  #relational methods
+  def artist=(artist)
+    @artist=artist
+    artist.add_song(self)
   end
 
 
