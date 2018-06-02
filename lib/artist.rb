@@ -51,6 +51,7 @@ class Artist
         res<<song.genre
       end
     end
+    res
   end
 
 
