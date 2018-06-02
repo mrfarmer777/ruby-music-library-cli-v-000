@@ -9,6 +9,14 @@ class Artist
     @songs=[]
   end
 
+  def songs
+    @songs
+  end
+
+  def add_song(song)
+    song.artist=self
+  end
+
   ##! How is this going to be generalizable?
   def self.all  #expose the class variable @@all
     @@all
