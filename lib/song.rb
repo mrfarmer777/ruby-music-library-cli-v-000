@@ -6,7 +6,7 @@ class Song
 
   def initialize(name,artist=nil)
     @name=name    #initializes with a name
-    self.artist=artist
+    @artist=artist
   end
 
   ##! How is this going to be generalizable?
