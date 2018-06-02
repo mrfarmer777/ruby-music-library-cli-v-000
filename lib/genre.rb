@@ -44,6 +44,7 @@ class Genre
         res<<song.artist
       end
     end
+    res
   end
 
 
