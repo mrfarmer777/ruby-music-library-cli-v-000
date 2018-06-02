@@ -9,7 +9,7 @@ class Artist
     @songs=[]
   end
 
-  
+
 
   ##! How is this going to be generalizable?
   def self.all  #expose the class variable @@all
