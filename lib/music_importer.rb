@@ -4,7 +4,8 @@ class MusicImporter
 
   def initialize(path)
     @path=path
-    @files=Dir.entries(path)
+    basedir = path
+    @files=Dir.glob("*.mp3")
   end
 
 end
