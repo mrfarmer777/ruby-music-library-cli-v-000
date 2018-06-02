@@ -38,7 +38,7 @@ class MusicLibraryController
   end
 
   def list_songs
-    sorted=Songs.sort
+    sorted=Song.sort
     sorted.each_with_index do |song,index|
       puts "#{index+1}. #{song.name}"
     end
