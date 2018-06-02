@@ -13,7 +13,7 @@ class MusicImporter
 
   def import
     self.files.each do |filename|
-      Song.create_from_filename(filename)
+      Song.find_orcreate_from_filename(filename)
     end
   end
 
