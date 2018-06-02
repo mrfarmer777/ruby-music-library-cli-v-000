@@ -45,8 +45,8 @@ class Artist
   end
 
   def genres
-    Song.all.each {|song| 
-      if song.artist==self 
+    Song.all.each {|song|
+      if song.artist==self
         song.genre
       end
     }
