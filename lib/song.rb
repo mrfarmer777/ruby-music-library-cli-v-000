@@ -6,7 +6,7 @@ class Song
   @@all=[]
 
   def initialize(name,artist=nil)
-    @name=name    #initializes with a name    
+    @name=name    #initializes with a name
     self.artist=(artist)
   end
 
@@ -32,7 +32,9 @@ class Song
   #relational methods
   def artist=(artist)
     @artist=artist
-    artist.add_song(self)
+    if artist != nil
+      artist.add_song(self)
+    end
   end
 
 
