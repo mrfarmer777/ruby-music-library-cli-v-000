@@ -31,7 +31,7 @@ class Song
   #relational methods
   def artist=(artist)
     @artist=artist
-    artist.songs<<self
+    artist.add_song(self)
   end
 
 
