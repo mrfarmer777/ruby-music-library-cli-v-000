@@ -5,7 +5,7 @@ class Song
   @@all=[]
 
   def initialize(name)
-    @name=name    #initializes with a name    
+    @name=name    #initializes with a name
   end
 
   ##! How is this going to be generalizable?
