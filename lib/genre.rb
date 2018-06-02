@@ -37,6 +37,15 @@ class Genre
     @songs<<song
   end
 
+  def artists
+    res=[]
+    @songs.each do |song|
+      if !res.include?(song.artist)
+        res<<song.artist
+      end
+    end
+  end
+
 
 
 
